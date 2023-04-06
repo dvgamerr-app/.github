@@ -25,7 +25,6 @@ Everything that happens here is my personal wish. software so it happened But a 
 - [ ] database design [budget-app#1](https://github.com/touno-io/budget-app/issues/1) `(ออกแบบ database postgresql บน cloud)`
 
 #### hentai-downloader (เอาไว้โหลดมังงะจากเว็บโดจินทั้งหมายแหล่)
-![Build (main)](https://img.shields.io/github/workflow/status/touno-io/hentai-downloader/Multiplatform%20Build/main?style=flat-square)
 ![last (main)](https://img.shields.io/github/last-commit/touno-io/hentai-downloader/main.svg?style=flat-square)
 
 - [x] deploy version lastest fix bug. [v2.2.1](https://github.com/touno-io/hentai-downloader/releases/tag/v2.2.1) 
