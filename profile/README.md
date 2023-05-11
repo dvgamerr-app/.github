@@ -35,12 +35,6 @@ Everything that happens here is my personal wish. software so it happened But a 
 2. let coding.
 3. create pull request and submit detail feature you adddon.
 
-
-
 # Useful resources
 - If your want help, you can join Discord
-
 [![Join Us?](https://discordapp.com/api/guilds/475720106471849996/widget.png?style=banner2)](https://touno.io/s/ixj7)
-
-
-
