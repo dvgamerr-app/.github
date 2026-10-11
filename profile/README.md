@@ -1,83 +1,82 @@
-## Hi, Everyone ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)
+# dvgamerr-app ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)
 
-Everything that happens here is my personal wish. Software makes it happen, but much is still unfinished, so let's see what still needs to be done:  
-`ทุกอย่างที่เกิดขึ้นในที่นี้เป็นความอยากได้ส่วนตัวของผมล้วนๆ ซอฟต์แวร์หลายๆ ตัวก็เลยเกิดขึ้น แต่ก็ไม่เสร็จอีกเยอะเช่นกัน เพราะงั้นเรามาดูสิ่งที่ยังต้องทำต่อกัน`
+**Small, useful, open-source tools built out of personal itches — mostly Go, shipped as single-binary CLIs, SDKs and desktop apps.**
+`เครื่องมือเล็กๆ ที่ใช้งานได้จริง สร้างจากความอยากได้ส่วนตัว ส่วนใหญ่เขียนด้วย Go เป็น CLI, SDK และแอปเดสก์ท็อป`
 
-# Todo (สิ่งที่ต้องทำ)
-
-#### gokub-mcp (MCP Server for Bitkub Tools)
-![last (main)](https://img.shields.io/github/last-commit/dvgamerr-app/gokub-mcp/main.svg?style=flat-square)
-![status](https://img.shields.io/badge/version-internal_dev-yellow?style=flat-square)
-
-- [x] Core MCP server built with Go  
-- [x] Integrated with `go-bitkub` SDK  
-- [x] Supports HTTP + SSE transport  
-- [x] Implemented tools: `get_wallet_balance`, `get_ticker`, `get_market_depth`, `get_my_open_orders`, `get_symbols`  
-- [ ] Add Docker/K8s deployment  
-- [ ] Add WebSocket data stream  
-- [ ] Implement trading bot framework  
-
-📖 [MCP-Go Framework](https://github.com/modelcontextprotocol/spec)  
-💎 [Go-Bitkub SDK](https://github.com/dvgamerr-app/go-bitkub)
+Automate the boring daily stuff, talk to crypto exchanges, run your LINE bots from one place, and hand AI assistants real tools to work with. Everything is open source and cross-platform — **if something here scratches your itch too, give it a ⭐ and come build with us.**
 
 ---
 
-#### go-bitkub (Go SDK สำหรับ Bitkub API)
-![last (main)](https://img.shields.io/github/last-commit/dvgamerr-app/go-bitkub/main.svg?style=flat-square)
-![release](https://img.shields.io/github/v/release/dvgamerr-app/go-bitkub?style=flat-square)
+## 🚀 Featured
 
-- [x] Released **v1.2.0** — Full Bitkub API V3/V4 coverage  
-- [x] Added CLI (`bitkub`) built with Cobra + Zerolog  
-- [x] Implemented WebSocket streams (`trade`, `ticker`, `orderbook`)  
-- [x] Improved SDK structure and test coverage  
-- [ ] Add gRPC and GraphQL layers  
-- [ ] Implement auto-trading modules (momentum, grid, arbitrage)  
+### 🪙 [go-bitkub](https://github.com/dvgamerr-app/go-bitkub) — Bitkub's whole API in one Go module
+![release](https://img.shields.io/github/v/release/dvgamerr-app/go-bitkub?style=flat-square) ![last commit](https://img.shields.io/github/last-commit/dvgamerr-app/go-bitkub/main.svg?style=flat-square)
 
-📦 [View Release v1.2.0](https://github.com/dvgamerr-app/go-bitkub/releases/tag/v1.2.0)
+SDK **and** a 33-command CLI for market data, live WebSocket streams, trading, crypto and fiat — request signing done for you. Outputs JSON / JSON Lines, so it drops straight into `jq`, cron and dashboards.
+[🌐 Website](https://dvgamerr.app/go-bitkub/)
 
----
+### 🤖 [gokub-mcp](https://github.com/dvgamerr-app/gokub-mcp) — Let Claude see the crypto market
+![release](https://img.shields.io/github/v/release/dvgamerr-app/gokub-mcp?style=flat-square) ![last commit](https://img.shields.io/github/last-commit/dvgamerr-app/gokub-mcp/main.svg?style=flat-square)
 
-#### go-hoyolab (Hoyolab Daily Check-in Automation)
-![last (main)](https://img.shields.io/github/last-commit/dvgamerr-app/go-hoyolab/main.svg?style=flat-square)
-![release](https://img.shields.io/github/v/release/dvgamerr-app/go-hoyolab?style=flat-square)
+An MCP server for Bitkub: wallet balance, tickers, market depth, open orders. Add it to Claude with one `claude mcp add`, or run it from Docker.
+[🌐 Website](https://dvgamerr.app/gokub-mcp/)
 
-- [x] Released **v1.4** — Supports Genshin Impact, Honkai StarRail, Honkai Impact 3  
-- [x] Auto check-in using Chrome profiles  
-- [x] Supports LINE Notify & Discord Notify  
-- [x] Multi-account & cross-platform (Windows/macOS/Linux)  
-- [ ] Add Zenless Zone Zero support  
-- [ ] Add Docker container version  
-- [ ] Add cross-browser session support  
-- [ ] Add Windows scheduled task installer  
+### 💬 [notice-manager](https://github.com/dvgamerr-app/notice-manager) — Every LINE bot, one REST API
+![last commit](https://img.shields.io/github/last-commit/dvgamerr-app/notice-manager/main.svg?style=flat-square)
 
-📦 [View Release v1.4](https://github.com/dvgamerr-app/go-hoyolab/releases/tag/hoyolab-v1.4)
+Self-hosted wrapper for LINE: manage all your bots from a single LINE account, send messages through a simple REST API, and forward webhooks. Up and running with one `docker compose` command.
+[🌐 Website](https://dvgamerr.app/notice-manager/)
 
----
+### 🎮 [go-hoyolab](https://github.com/dvgamerr-app/go-hoyolab) — Never miss a daily check-in
+![stars](https://img.shields.io/github/stars/dvgamerr-app/go-hoyolab?style=flat-square) ![release](https://img.shields.io/github/v/release/dvgamerr-app/go-hoyolab?style=flat-square)
 
-#### hentai-downloader (โปรแกรมดาวน์โหลดมังงะจากเว็บ e-hentai/exhentai)
-![last (main)](https://img.shields.io/github/last-commit/dvgamerr-app/hentai-downloader/main.svg?style=flat-square)
-![release](https://img.shields.io/github/v/release/dvgamerr-app/hentai-downloader?style=flat-square)
+One small binary (Windows, macOS, Linux, FreeBSD) that auto check-ins for Genshin Impact, Honkai: Star Rail, Honkai Impact 3rd and Zenless Zone Zero. Multi-account, with LINE Notify & Discord alerts.
+[🌐 Website](https://dvgamerr.github.io/go-hoyolab/)
 
-- [x] Released **v2.2.1** — Electron-based Manga Downloader  
-- [x] Supports **e-hentai.org** & **exhentai.org**  
-- [x] Clipboard auto-detection and queue management  
-- [x] Fixes corrupted images via re-download  
-- [x] Persistent queue saving  
-- [x] Cross-platform (Windows/Mac/Linux)  
-- [ ] Refactor UI with new Electron engine  
-- [ ] Add parallel download feature with throttling  
-- [ ] Add Docker build and CLI mode  
+### 🖼️ [livepaper-app](https://github.com/dvgamerr-app/livepaper-app) — Live wallpapers from the command line
+![last commit](https://img.shields.io/github/last-commit/dvgamerr-app/livepaper-app/main.svg?style=flat-square)
 
-📦 [View Release v2.2.1](https://github.com/dvgamerr-app/hentai-downloader/releases/tag/v2.2.1)
+Set a different wallpaper per monitor on Windows — including live video — without a heavyweight app.
+[🌐 Website](http://dvgamerr.app/livepaper-app/)
+
+### 📥 [hentai-downloader](https://github.com/dvgamerr-app/hentai-downloader) — The most-starred one
+![stars](https://img.shields.io/github/stars/dvgamerr-app/hentai-downloader?style=flat-square) ![release](https://img.shields.io/github/v/release/dvgamerr-app/hentai-downloader?style=flat-square)
+
+Desktop manga downloader for e-hentai / exhentai: queue as many galleries as you like, clipboard auto-detection, cross-platform.
+[🌐 Website](http://dvgamerr.app/hentai-downloader/)
 
 ---
 
-# Contribution guidelines (อยากช่วยเหรอ ได้เลย)
-1. Fork the project.  
-2. Start coding.  
-3. Create a pull request and describe your changes clearly.  
+## 🧰 More tools & experiments
 
-# Useful resources
-- If you want help, you can join Discord  
+| Project | In one line |
+| --- | --- |
+| [jirasync-hub-app](https://github.com/dvgamerr-app/jirasync-hub-app) | Desktop app (TypeScript + React + Rust) that syncs Jira with a central hub |
+| [waka-personal](https://github.com/dvgamerr-app/waka-personal) | Single-user, WakaTime-compatible backend you own |
+| [aide-collector](https://github.com/dvgamerr-app/aide-collector) | High-performance queue system on Bun, Drizzle ORM and PostgreSQL |
+| [crontab-windows](https://github.com/dvgamerr-app/crontab-windows) | Linux-style per-user `crontab` for Windows, run by a Windows service |
+| [pkill-port-terminate](https://github.com/dvgamerr-app/pkill-port-terminate) | Cross-platform CLI to kill whatever is listening on a TCP port |
+| [go-kooky](https://github.com/dvgamerr-app/go-kooky) | Go library to read cookies from browser cookie stores |
+| [pingstats](https://github.com/dvgamerr-app/pingstats) | Graphical ping monitoring for Windows |
+| [looter-app](https://github.com/dvgamerr-app/looter-app) | Note game items, loot and reminders so you never forget progress |
+| [dvgamerr.app](https://github.com/dvgamerr-app/dvgamerr-app.github.io) | Bilingual portfolio with a 3D globe — Astro, Svelte, Tailwind, Bun |
+
+---
+
+## 🤝 Contribute (อยากช่วยเหรอ ได้เลย)
+
+1. Fork the project
+2. Start coding
+3. Open a pull request and describe your changes clearly
+
+No contribution is too small — docs, bug reports and ideas are all welcome. Each repo's issues are the best place to find something to pick up.
+
+## 💬 Community
+
+Questions, ideas, or just want to hang out? Come say hi on Discord.
 
 [![Join Us?](https://discordapp.com/api/guilds/475720106471849996/widget.png?style=banner2)](https://discord.gg/QDccF497Mw)
+
+---
+
+<sub>Everything that happens here is my personal wish. Software makes it happen, but much is still unfinished — so let's finish it together. / ทุกอย่างที่เกิดขึ้นในที่นี้เป็นความอยากได้ส่วนตัวของผมล้วนๆ หลายอย่างยังไม่เสร็จ มาทำให้เสร็จด้วยกันนะ</sub>
